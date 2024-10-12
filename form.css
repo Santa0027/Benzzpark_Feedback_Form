@@ -11,15 +11,16 @@ body {
     margin: 0%;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/asset/_ITS1253-2-Panorama.jpg');
+    background-color: #4da4ecd3;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/asset/_ITS1253-2-Panorama.jpg'); */
     background-repeat: no-repeat;
     background-size:cover;
 
 }
-
+/* 
 .container{
-    background-color:rgba(201, 226, 248, 0.473);
+    background-color:rgba(0, 0, 0, 0.1);
     height:90vh;
     width: 80%;
     border-radius: 25px;
@@ -27,14 +28,14 @@ body {
     top: 2.5rem;
     left: 10rem;
 
-}
+} */
 .logo{
     position: absolute;
     right: 33rem;
     height: 6rem;
 }
 
-.first-half{
+/* .first-half{
     border: #fff 1px solid;
     position: absolute;
     top: 6rem;
@@ -42,7 +43,7 @@ body {
     width: 48%;
     color: #fff;
 
-}
+} */
 
 .r1{
     display: flex;
@@ -56,11 +57,11 @@ body {
     justify-content: space-around;
 }
 
-.r3 h3{
+/* .r3 h3{
     position: absolute;
     left: 17rem;
 
-}
+} */
 .r4{
     display: flex;
     flex-direction: row;
@@ -82,15 +83,199 @@ input[type="radio"] {
 }
 
 .inputbox {
-    background-color: rgba(248, 248, 248, 0.3);
+    background-color: rgba(255, 255, 255, 0.7);
     box-sizing: 1rem;
-    color: white;
+    color: rgb(51, 48, 48);
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
     font-size: 16px;
     outline: none;
-    width: 90%;
+    width: 100%;
   }
 
+
+
+
+  @media only screen and (max-width: 700px) {
+
+    
+    
+    .logo{
+        margin:0%;
+        position: absolute;
+        left: 11rem;
+        height: 6rem;
+    }
+
+    .container{
+        position: absolute;
+        background-color:rgb(255, 255, 255);
+        left: 1.2rem;
+        top: 1rem;
+        width: 94%;
+        height: 105%;
+        border: #000000 2px solid;
+        border-radius: 15px;
+
+    }
+    
+    
+    .inputbox{
+        width: 8rem;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        margin-top: 7rem;
+        justify-content: space-around;
+
+    }
+    .r1{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+    .r2{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .r3 h3{
+        position: absolute;
+        margin-top: 0%;
+        font-size:x-large;
+        left: 15rem;
+        color: #4da4ec;
+    }
+
+    .front-office{
+        display: flex;
+        flex-direction: row;
+        justify-content:center ;
+        margin-left: 5rem;
+        margin-top: 1.5rem;
+    }
+
+    .front-office-list li{
+        list-style: none;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .front-office-list-btn{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-left: 2rem;
+        width: 15rem;
+        list-style: none;
+
+    }
+   
+    .star-icon{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .housekeeping{
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 0.4rem;
+    }
+    .housekeeping-first{
+        width: 50%;
+    }
+
+    .housekeeping-list-btn{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 1rem;
+
+    }
+
+    .star-icon-regular{
+
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: 0%;
+        margin: 0%;
+        list-style: none;
+
+    }
+
+
+    .housekeeping-title li{
+        list-style: none;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .house-keeping-title{
+        margin: 0%;
+        padding: 0%;
+        position: absolute;
+        left: 15.5rem;
+        color: #4da4ec;
+        font-size: 1.3rem;
+        /* margin-bottom: 1rem; */
+    }
+
+    .housekeeping-first{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .housekeeping-secound{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .general-flex{
+        display: flex;
+        flex-direction: row;
+        margin: 0%;
+        padding: 0%;
+        align-items: center;
+    }
+
+    .food-beverage{
+        margin-left: 2rem;
+        gap: 2rem;
+
+    }
+    .food{
+        gap: 1rem;
+    }
+    .quality{
+        gap: 1rem;
+    }
+    .service{
+        gap: 1rem;
+    }
+
+    .pad{
+        margin-left: 0.5rem;
+    }
+
+    .food-beverage-title{
+        margin: 0%;
+        padding: 0%;
+        color: #4da4ec;
+        margin-left: 15rem;
+        font-size: 1.3rem;
+    }
+
+
+
+  }
